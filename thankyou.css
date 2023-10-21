@@ -1,0 +1,24 @@
+body{
+
+    background-image: url("wallpaper-for-hacker.png");
+    background-size: auto;
+
+}
+
+.maintxt{
+
+    color: aliceblue;
+    text-align: center;
+   
+}
+
+.main{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    backdrop-filter: blur(50px);
+padding: 50px;
+border-style: solid;
+border-color: rgb(255, 255, 255);
+border-radius: 15px;
+width: 60%;
+}

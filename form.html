@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Form with Bootstrap</title>
+</head>
+<body>
+    
+    <div class="form-main container-fluid">
+        <form class="needs-validation p-3" novalidate action="thankyou.html">
+            <div class="form row">
+<div class="col-sm-6">
+    <label class="form-label" for="firstname">First Name</label>
+    <input class="form-control" type="text" name="firstname" id="firstname" placeholder="Enter First Name" required>
+    <div class="valid-feedback">Looks Good</div>
+    <div class="invalid-feedback">Please fill up First Name</div>
+</div>
+<div class="col-sm-6">
+    <label class="form-label" for="lastname">Last Name</label>
+    <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Enter Last Name" required>
+    <div class="valid-feedback">Looks Good</div>
+    <div class="invalid-feedback">Please fill up Last Name</div>
+</div>
+
+<div class="col-sm-6">
+    <label class="form-label" for="email">Email</label>
+    <input class="form-control" type="email" name="email" id="email" placeholder="Enter Email" required>
+    <div class="valid-feedback">Looks Good</div>
+    <div class="invalid-feedback">Please fill up Email</div>
+</div>
+
+<div class="col-sm-6">
+    <label class="form-label" for="pass">Password</label>
+    <input class="form-control" type="password" name="pass" id="pass" placeholder="Enter Password" required>
+    <div class="valid-feedback">Looks Good</div>
+    <div class="invalid-feedback">Please fill up Password</div>
+</div>
+
+<div class="col-sm-6">
+    <label class="form-label" for="phone">Phone Number</label>
+    <input class="form-control" type="tel" name="phone" id="phone" placeholder="Enter Phone #" pattern="[0-9]{11}" required>
+    <div class="valid-feedback">Looks Good</div>
+    <div class="invalid-feedback">Invalid Phone Number</div>
+</div>
+
+<div class="col-sm-6 pt-3">
+  <label class="form-label">Gender:</label>
+  <br>
+
+  <input type="radio" class="form-check-input" id="male" name="gender" required>
+  <label class="form-label">Male</label>
+  <input type="radio" class="form-check-input" id="female" name="gender" required>
+  <label class="form-label">Female</label>
+  <div class="valid-feedback">Looks Good</div>
+  <div class="invalid-feedback">Please select Gender</div>
+</div>
+
+<div class="col-sm-12">
+
+    <label class="form-label" for="address"> Street Address </label>
+    <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address" required>
+    <div class="valid-feedback">Looks Good</div>
+    <div class="invalid-feedback">Please Enter Address</div>
+</div>
+
+<div class="col-sm-6">
+
+    <label class="form-label pt-2" for="city"> City </label>
+    <input type="text" class="form-control" id="city" name="city" placeholder="Enter City" required>
+    <div class="valid-feedback">Looks Good</div>
+    <div class="invalid-feedback">Please Enter City</div>
+</div>
+
+<div class="col-sm-6">
+
+    <label class="form-label pt-2" for="zip"> Zip Code </label>
+    <input type="tel" class="form-control" id="zip" name="zip" pattern="[0-9]{4}" placeholder="Enter Zip Code" required>
+    <div class="valid-feedback">Looks Good</div>
+    <div class="invalid-feedback">Please Enter Zip</div>
+</div>
+
+<div class="col-sm-12 pt-2">
+    <label class="form-label ">Country</label>
+<select class="form-select" required>
+    <option></option>
+                <option>Afghanistan</option>
+                <option>Albania</option>
+                <option>Algeria</option>
+                <option>Andorra</option>
+                <option>Angola</option>
+                <option>Australia</option>
+                <option>Argentina</option>
+                <option>Bangladesh</option>
+                <option>Bahrain</option>
+                <option>Brazil</option>
+                 <option>Canada</option>
+                <option>China</option>
+                <option>Colombia</option>
+                <option>Czechia</option>
+                <option>Egypt</option>
+                <option>France</option>
+                <option>Afghanistan</option>
+                <option>Germany</option>
+                <option>Ghana</option>
+                <option>India</option>
+                <option>Indonesia</option>
+                <option>Iraq</option>
+                <option>Iran</option>
+                <option>Israel</option>
+                <option>Italy</option>
+                <option>Japan</option>
+                 <option>Kuwait</option>
+                <option>Mexico</option>
+                <option>Mozambique</option>
+                <option>Nepal</option>
+                <option>Philippines</option>
+                <option>Saudi Arabia</option>
+                <option>Singapore</option>
+                <option>South Africa</option>
+                <option>South Korea</option>
+                <option>Switzerland</option>
+                 <option>Thailand</option>
+                <option>Turkey</option>
+                <option>Ukraine</option>
+                <option>United Arab Emirates</option>
+                <option>United Kingdom</option>
+                <option>United States of America</option>
+        
+</select>
+<div class="valid-feedback">Looks Good</div>
+<div class="invalid-feedback">Please select Country</div>   
+</div>
+
+<div class="checkbox col-sm-12 pt-4">
+
+<input type="checkbox" class="form-check-inline" required>
+<label class="form-label">Do you Agree in our Terms and Conditions</label>
+<div class="invalid-feedback">Please Check our Terms and Conditions</div>
+</div>
+
+<div class="btn col-sm-12 pt-4">
+
+    <button type="submit" class="btn btn-outline-light">Sign Up</button>
+
+</div>
+
+
+</div>
+
+
+
+        </form>
+    
+    </div>
+
+<script>
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+
+    background-image: url("wallpaper-for-hacker.png");
+    background-size: auto;
+
+}
+
+.main{
+color: aliceblue;
+
+}
+
+
+
+.form-main {
+backdrop-filter: blur(50px);
+padding: 50px;
+border-style: solid;
+border-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 55%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ 
+}
+
+.form label{
+    color: aliceblue;
+}
+
+
+.btn button{
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.checkbox{
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
